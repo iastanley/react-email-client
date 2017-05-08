@@ -2,9 +2,9 @@
 
 modify README when app is created.
 
-to use: git clone <git url> <new project name>
+to use: git clone git-url new-project-name
 
-cd <new repo>
+cd new-project-name
 
 npm install
 
