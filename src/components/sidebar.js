@@ -1,11 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import './sidebar.css';
 
 export function Sidebar(props) {
     const folders = props.folderList.map(folder =>
         <li key={folder.id} className="folder-menu-list-item">
-            {folder.name}
+          <Link to={"/" + folder.id}>{folder.name}</Link>
         </li>
     );
 

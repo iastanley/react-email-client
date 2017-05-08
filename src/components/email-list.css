@@ -12,4 +12,5 @@
 .email-list-email-from {
     flex: 0 0 25%;
     font-weight: bold;
+    margin-right: 5px;
 }
