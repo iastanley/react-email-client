@@ -12,8 +12,7 @@ export default function Email() {
         <div className="email">
             <Sidebar />
             <main>
-              <Route exact path="/" render={
-                () => (<Redirect to="/inbox"/>)}/>
+              <Redirect from="/" to="/inbox" />
               <Route exact path="/:folderId" component={EmailList}/>
               <Route exact path="/:folderId/:emailId" component={SingleEmail}/>
             </main>
